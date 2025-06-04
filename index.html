@@ -1,38 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soleane M Macena</title>
-</head>
-<body>
-    <h1>Soleane Mota Macena</h1>
-    <img src="image/sole.jpg" alt="Foto de Soleane com cabelos cacheados solto, blusa preta com estampa vermelha e o fundo é uma parede branca" width="300px">
-    <h2>Sobre mim</h2>
-    <p>
-        Olá! Eu sou estudante de desenvolvimento web da Trybe. Sou brasileira, mãe, atualmente vivo em Manaus - AM, mas sou intinerante. 
-        <br><br>
-        Desde muito nova tive fascínio de saber como ocorria a interação do computador com os softwares. Estudei, por conta própria, sobre o assunto e a partir dai fiz curso de lógica de programação e decidi ser desenvolvedora.
-        <br><br>
-        A cada dia que passa, meu amor por códigos só aumenta.
-    </p>
-    <h2>Habilidades</h2>
-    <ul>
-        <li>Habilidaes que mais me orgulho
-            <br><br>
-            <ul>
-                <li>Resiliência</li>
-                <li>Raciocínio Lógico</li>
-            </ul>
-        </li>
-        <br><br>
-        <li>Outras Habilidades
-            <br><br>
-            <ul>
-                <li>Comunicação</li>
-                <li>Empatia</li>
-            </ul> 
-    </ul>
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Soleane Macena</title>
+  </head>
+  <body>
+    <!-- Estrelas animadas e nuvens -->
+    <div class="sky">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <!-- Nuvens para tema claro -->
+      <div class="cloud"></div>
+      <div class="cloud"></div>
+      <div class="cloud"></div>
+      <div class="cloud"></div>
+      <div class="cloud"></div>
+    </div>
+
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#hero">Meu Portfólio</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌞</button>
+        <button class="menu-btn" id="menuBtn">
+          <img src="/image/menu.svg" alt="menu" />
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <h1>Olá, eu sou a Soleane Macena</h1>
+          <p>
+            Desenvolvedora web dedicada em solucionar problemas criando aplicações,
+            bibliotecas e colaborando em projetos livres.
+          </p>
+        </div>
+      </section>
+
+      <section id="sobre">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about-content">
+          <p>
+            Sou mulher, mãe de adolesceste e gosto de estar sempre aprendendo. Trabalhei
+            na área de vendas, informalmente, o que me deu experiência em lidar com
+            pessoas e ajudou no desenvolvimento das minhas Soft Skills. <br />
+            A programação entrou em vários momento da minha vida, hoje faço Bacharelado em
+            Engenharia de Software e sou desenvolvedora web Full Stack. Possuo uma sólida
+            base em lógica computacional e um amplo conhecimento tanto em Front-end quanto
+            em Back-end. Ao longo do caminho, adquiri habilidades em Programação Orientada
+            a Objetos (POO) e a aplicação dos princípios S.O.L.I.D. <br />
+            Tenho interesse em arraigar meu entendimento sobre a arquitetura de
+            aplicações, buscando aprimorar o desempenho e solucionar problemas. <br />
+            Atualmente, estou focada em aprofundar meus estudos na linguagem Java e amado
+            trabalhar com a família Spring (Spring Boot, Spring Web, Spring Data JPA,
+            entre outros). <br />
+            Minhas características pessoais incluem resiliência, organização e superação
+            na arte da comunicação. Estou constantemente aprimorando a escuta ativa, a
+            comunicação não violenta e comunicação assíncrona.
+          </p>
+        </div>
+        <h3 class="section-title" style="font-size: x-large; margin-top: 32px">
+          Minhas Habilidades Técnicas
+        </h3>
+        <div class="skills">
+          <span class="skill">React</span>
+          <span class="skill">Angular</span>
+          <span class="skill">Python</span>
+          <span class="skill">TypeScript</span>
+          <span class="skill">Java</span>
+          <span class="skill">Android / kotlin</span>
+          <span class="skill">SQL</span>
+          <span class="skill">NOSQL</span>
+        </div>
+      </section>
+
+      <section id="formacao">
+        <h2 class="section-title">Formação</h2>
+        <div class="education-item">
+          <h3>Bacharelado em Engenharia de Software</h3>
+          <p>
+            <strong>Centro Universitário Internacional - UNINTER</strong> - 2024 até 2027
+          </p>
+          <p>
+            Foco em arquitetura e desenvolvimento de software, engenharia de requisitos,
+            algoritmos e estruturas de dados.
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>Curso de Desenvolvimento Web Full Stack</h3>
+          <p><strong>Trybe</strong> - 2022 até 2023</p>
+          <p>Especialização em tecnologias modernas de desenvolvimento web.</p>
+        </div>
+        <div class="education-item">
+          <h3>Idiomas</h3>
+          <ul>
+            <li>Português (Nativo)</li>
+            <li>Inglês (Iniciando o nível B1)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projetos">
+        <h2 class="section-title">Projetos</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <a
+              href="https://project-trybewarts.surge.sh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="project-img">
+                <img
+                  src="./image/projeto1.png"
+                  alt="Imagem e link da tela principal para o app livro de receitas"
+                />
+              </div>
+              <h3>TrybeWarts</h3>
+              <p>
+                Este projeto foi um dos primeiros tabalhos desenvolvido na Trybe, onde
+                criei um formulário com validação de campos e temas baseado em Harry
+                Potter.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a
+              href="https://github.com/soleane-mota/hotel-booking"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="project-img">
+                <img
+                  src="https://circodetodomundo.org.br/images/joomlart/demo/default.jpg"
+                  alt="Link para o projeto de uma API reserva de hospedagem com gif de demonstrando uma requisição"
+                />
+              </div>
+              <h3>API Reserva de hospedagem</h3>
+              <p>
+                API RESTful para gerenciamento de reservas de hospedagem, com autenticação
+                e autorização. Desenvolvida com Spring Boot e Spring Security. Implementa
+                testes automatizados com JUnit e Mockito. Utiliza banco de dados
+                PostgreSQL para persistência de dados.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">TDD</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Spring Security</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a
+              href="https://github.com/soleane-mota/app-blog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="project-img">
+                <img
+                  src="https://circodetodomundo.org.br/images/joomlart/demo/default.jpg"
+                  alt="Imagem link para o blog"
+                />
+              </div>
+              <h3>App Blog</h3>
+              <p>
+                Este rpojeto foi um exercício de aprendizado, onde desenvolvi uma
+                aplicação de blog com funcionalidades básicas, como criação de postagens e
+                comentários. O foco foi aprimorar minhas habilidades em Angular e
+                TypeScript.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <h2 class="section-title">Contato</h2>
+        <div class="contact-content">
+          <p>Entre em contato comigo através dos canais abaixo.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <a
+                class="social-link"
+                href="mailto:soleane.macena@gmail.com"
+                target="_blank"
+                title="Enviar e-mail"
+              >
+                <img src="/image/email.svg" alt="e-mail soleane.macena@gmail.com" />
+              </a>
+            </div>
+            <div class="contact-item">
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/soleane-mota/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="/image/linkedin.svg" alt="LinkedIn da Soleane"
+              /></a>
+            </div>
+            <div class="contact-item">
+              <a
+                class="social-link"
+                href="https://github.com/soleane-mota"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="/image/github.svg" alt="GitHub da Soleane"
+              /></a>
+            </div>
+            <div class="contact-item">
+              <a
+                class="social-link"
+                href="https://t.me/SoleMMacena"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/image/telegram.svg" alt="link de acesso ao telegram" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Soleane Mota Macena. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+      function toggleTheme() {
+        const body = document.body;
+        const themeBtn = document.getElementById('themeBtn');
+
+        body.classList.toggle('light-theme');
+
+        if (body.classList.contains('light-theme')) {
+          themeBtn.innerHTML = '🌙';
+        } else {
+          themeBtn.innerHTML = '🌞';
+        }
+      }
+
+      // Smooth scroll para os links da navegação
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+          });
+        });
+      });
+      document.getElementById('menuBtn').addEventListener('click', function () {
+        document.body.classList.toggle('nav-open');
+      });
+    </script>
+  </body>
 </html>
