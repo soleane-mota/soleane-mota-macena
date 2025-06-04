@@ -521,7 +521,10 @@ section {
 /* Grid de projetos */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Cria colunas responsivas */
   gap: 2rem;
   margin-top: 2rem;
 }

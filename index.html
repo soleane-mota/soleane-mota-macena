@@ -7,8 +7,9 @@
     <title>Soleane Macena</title>
   </head>
   <body>
-    <!-- Estrelas animadas e nuvens -->
+    <!-- Container com os elemntos que compoem o céu -->
     <div class="sky">
+      <!-- Estrelas para o tema escuro -->
       <div class="star"></div>
       <div class="star"></div>
       <div class="star"></div>
@@ -33,24 +34,33 @@
     </div>
 
     <header>
+      <!-- Navbar fixada no topo -->
       <nav>
         <div class="logo">
+          <!-- TODO: Criar uma logo -->
           <a href="#hero">Meu Portfólio</a>
         </div>
+        <!-- Links de acesso -->
         <ul class="nav-links">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#formacao">Formação</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
+        <!-- Botão de alternância de tema e menu -->
         <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌞</button>
+        <!-- Botão de menu para telas menores, com o objetivo de ajudar na usabilidade -->
+        <!-- Ele fica escondido em telas maiores -->
         <button class="menu-btn" id="menuBtn">
           <img src="/image/menu.svg" alt="menu" />
         </button>
       </nav>
     </header>
 
+    <!-- Seção principal do portfólio -->
+    <!-- Foi definido em uma landing page -->
     <main>
+      <!-- Esta seção é uma introdução de apresentação -->
       <section class="hero" id="hero">
         <div class="hero-content">
           <h1>Olá, eu sou a Soleane Macena</h1>
@@ -61,6 +71,7 @@
         </div>
       </section>
 
+      <!-- Seção dedicada afalar sobre mim -->
       <section id="sobre">
         <h2 class="section-title">Sobre Mim</h2>
         <div class="about-content">
@@ -98,6 +109,7 @@
         </div>
       </section>
 
+      <!-- Seção dedicada a formação acadêmica e cursos -->
       <section id="formacao">
         <h2 class="section-title">Formação</h2>
         <div class="education-item">
@@ -124,6 +136,7 @@
         </div>
       </section>
 
+      <!-- Esta seção apresenta os três principais projetos desenvolvidos por mim -->
       <section id="projetos">
         <h2 class="section-title">Projetos</h2>
         <div class="projects-grid">
@@ -210,6 +223,8 @@
         </div>
       </section>
 
+      <!-- Seção de contato -->
+      <!-- Aqui estão os links de contato, como e-mail, LinkedIn, GitHub e Telegram -->
       <section id="contato">
         <h2 class="section-title">Contato</h2>
         <div class="contact-content">
@@ -258,10 +273,16 @@
       </section>
     </main>
 
+    <!-- Rodapé do portfólio -->
+    <!-- Contém informações de direitos autorais -->
     <footer>
       <p>&copy; 2025 Soleane Mota Macena. Todos os direitos reservados.</p>
     </footer>
+    <!-- Scripts JavaScript -->
+    <!-- O projeto foi desenvolvido em HTML e CSS, mas com o objetivo de aprimorá-lo, foi acrescentado os temas claro e escuro e uma melhoria visual para telas de celulares com a implementação de um menu no header. Logo, fez-se necessário a implementação de escuta de eventos e condicionais para os botões relacionados -->
     <script>
+      // Função para alternar entre temas claro e escuro
+      // A função altera a classe do body e o ícone do botão de tema
       function toggleTheme() {
         const body = document.body;
         const themeBtn = document.getElementById('themeBtn');
@@ -276,6 +297,8 @@
       }
 
       // Smooth scroll para os links da navegação
+      // Adiciona um evento de clique a todos os links que começam com #
+      // Impede o comportamento padrão do link e rola suavemente para a seção correspondente
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
